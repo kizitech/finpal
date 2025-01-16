@@ -9,10 +9,9 @@ import { CustomButton, LoaderPage } from "../components";
 
 const Welcome = () => {
     return (
-        <SafeAreaView className="bg-white h-full flex items-center justify-center w-full">
-            <LoaderPage />
-            <Text className="text-3xl font-dsregular">Working!!!</Text>
-
+        <SafeAreaView className="bg-white h-full">
+            <LoaderPage isLoading={false} />
+            <Text>It is still working</Text>
             {/* <ScrollView
                 contentContainerStyle={{
                     height: "100%",
@@ -58,7 +57,7 @@ const Welcome = () => {
                 </View>
             </ScrollView> */}
 
-            <StatusBar backgroundColor="#65A30D" style="light" />
+            <StatusBar backgroundColor="#ffffff" style="light" />
         </SafeAreaView>
     )
 }
