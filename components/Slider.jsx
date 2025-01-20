@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { SlideItem, Pagination } from '../components'
+import { SlideItem, Pagination } from "./index"
 import Slides from "../constants/carouselData"
 import { Animated, FlatList, StyleSheet, Text, View } from 'react-native'
 
@@ -51,5 +51,3 @@ const Slider = () => {
 }
 
 export default Slider
-
-const styles = StyleSheet.create({})

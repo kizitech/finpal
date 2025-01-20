@@ -55,7 +55,7 @@ const Welcome = () => {
                         primary
                         icon={true}
                         title="Get Started"
-                        handlePress={() => router.push("/slider")}
+                        handlePress={() => router.push("/carousel")}
                         containerStyles="w-full mt-14"
                     />
                 </View>
