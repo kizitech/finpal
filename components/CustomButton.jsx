@@ -1,4 +1,5 @@
-import { ActivityIndicator, Text, TouchableOpacity } from "react-native";
+import { ActivityIndicator, Image, Text, TouchableOpacity, View } from "react-native";
+import { icons } from "../constants";
 
 const CustomButton = ({
   title,
@@ -8,27 +9,24 @@ const CustomButton = ({
   isLoading,
   primary,
   secondary,
-  link
+  link,
+  icon
 }) => {
-  // Determine the background and border styles based on the button type
-  const buttonStyles =
-    primary
-      ? "bg-primary"
-      : secondary
-        ? "bg-white border border-primary"
-        : link
-          ? "bg-transparent"
-          : "";
+  const buttonStyles = primary
+    ? "bg-primary"
+    : secondary
+      ? "bg-white border border-primary"
+      : link
+        ? "bg-transparent"
+        : "";
 
-  // Determine the text color based on the button type
-  const textColor =
-    primary
-      ? "text-white"
-      : secondary
-        ? "text-primary"
-        : link
-          ? " text-primary underline"
-          : "text-black";
+  const textColor = primary
+    ? "text-white"
+    : secondary
+      ? "text-primary"
+      : link
+        ? "text-primary underline"
+        : "text-black";
 
   return (
     <TouchableOpacity
@@ -38,6 +36,7 @@ const CustomButton = ({
         }`}
       disabled={isLoading}
     >
+
       <Text className={`font-dssemibold text-xl ${textColor} ${textStyles}`}>
         {title}
       </Text>
@@ -49,6 +48,15 @@ const CustomButton = ({
           size="small"
           className="ml-2"
         />
+      )}
+      {icon && (
+        <View className="mr-2">
+          <Image
+            className="ml-2 h-5 w-5"
+            resizeMode="contain"
+            source={icons.arrowRight}
+          />
+        </View>
       )}
     </TouchableOpacity>
   );
