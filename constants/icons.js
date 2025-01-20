@@ -1,5 +1,5 @@
-// import play from "../assets/icons/play.png";
+import checkbox from "../assets/icons/checkbox.png";
 
 export default {
-
+    checkbox,
 };

@@ -3,8 +3,16 @@ import { Redirect, router } from "expo-router";
 import { View, Text, Image, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { images } from "../constants";
+import { images, icons } from "../constants";
 import { CustomButton, LoaderPage } from "../components";
+
+const checkList = [
+    "Finance Companion",
+    "Smart Goal Tracking",
+    "AI-Powered Budgeting",
+    "Achievements & More!",
+    "Subscription Management",
+]
 
 const Welcome = () => {
     return (
@@ -28,10 +36,25 @@ const Welcome = () => {
                         Your Smart Personal Finance AI Companion UI Kit
                     </Text>
 
+                    <View className="w-full grid justify-center items-center mt-7">
+                        <View>
+                            {checkList.map((item, index) => (
+                                <View key={index} className="flex flex-row items-center mt-4">
+                                    <Image
+                                        className="w-5 h-5"
+                                        resizeMode="contain"
+                                        source={icons.checkbox}
+                                    />
+                                    <Text className="ml-3 text-base font-dsregular text-gray-600">{item}</Text>
+                                </View>
+                            ))}
+                        </View>
+                    </View>
+
                     <CustomButton
                         title="Get Started"
                         handlePress={() => router.push("/sign-in")}
-                        containerStyles="w-full mt-7"
+                        containerStyles="w-full mt-14"
                     />
                 </View>
             </ScrollView>
