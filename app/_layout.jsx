@@ -40,6 +40,7 @@ const RootLayout = () => {
         <>
             <Stack>
                 <Stack.Screen name="index" options={{ headerShown: false }} />
+                <Stack.Screen name="slider" options={{ headerShown: false }} />
             </Stack>
             <StatusBar style="black" />
         </>
