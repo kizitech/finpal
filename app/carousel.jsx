@@ -1,5 +1,6 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import { View } from 'react-native'
+import { router } from 'expo-router'
 import { CustomButton, Slider } from '../components'
 
 const Carousel = () => {
@@ -11,13 +12,13 @@ const Carousel = () => {
                     primary
                     icon={true}
                     title="Get Started"
-                    handlePress={() => router.push("/carousel")}
+                    handlePress={() => router.push("/sign-up")}
                     containerStyles="w-full mt-14"
                 />
                 <CustomButton
                     secondary
                     title="Sign In"
-                    handlePress={() => router.push("/carousel")}
+                    handlePress={() => router.push("/sign-in")}
                     containerStyles="w-full mt-5"
                 />
             </View>
