@@ -1,6 +1,5 @@
 import { View, ActivityIndicator, Dimensions, Platform, Text, Image } from "react-native";
 import { images } from "../constants"
-import { StatusBar } from "expo-status-bar";
 
 const Loader = ({ isLoading }) => {
     const osName = Platform.OS;
@@ -29,7 +28,6 @@ const Loader = ({ isLoading }) => {
                     />
                 </View>
             </View>
-            <StatusBar style="black" />
         </>
     );
 };
