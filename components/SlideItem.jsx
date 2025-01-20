@@ -22,7 +22,7 @@ const SlideItem = ({ item }) => {
     }).start();
 
     return (
-        <View style={styles.container}>
+        <View style={[styles.halfScreen, { height: height - 240 }]}>
             <Animated.Image
                 source={item.img}
                 resizeMode="contain"
@@ -49,18 +49,18 @@ const SlideItem = ({ item }) => {
 export default SlideItem;
 
 const styles = StyleSheet.create({
-    container: {
+    halfScreen: {
         width,
-        height,
-        alignItems: 'center',
         padding: 16,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     image: {
         flex: 0.6,
         width: '100%',
     },
     content: {
-        flex: 0.4,
+        paddingTop: 20,
         alignItems: 'center',
     },
 });

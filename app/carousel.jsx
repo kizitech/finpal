@@ -6,9 +6,19 @@ const Carousel = () => {
     return (
         <View>
             <Slider />
-            <View>
+            <View className="px-4 bg-white">
                 <CustomButton
-
+                    primary
+                    icon={true}
+                    title="Get Started"
+                    handlePress={() => router.push("/carousel")}
+                    containerStyles="w-full mt-14"
+                />
+                <CustomButton
+                    secondary
+                    title="Sign In"
+                    handlePress={() => router.push("/carousel")}
+                    containerStyles="w-full mt-5"
                 />
             </View>
         </View>
