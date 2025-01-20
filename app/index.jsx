@@ -55,7 +55,7 @@ const Welcome = () => {
                         primary
                         icon={true}
                         title="Get Started"
-                        handlePress={() => router.push("/sign-in")}
+                        handlePress={() => router.push("/slider")}
                         containerStyles="w-full mt-14"
                     />
                 </View>
