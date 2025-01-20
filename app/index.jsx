@@ -10,7 +10,7 @@ import { CustomButton, LoaderPage } from "../components";
 const Welcome = () => {
     return (
         <SafeAreaView className="bg-white h-full">
-            <LoaderPage isLoading={false} />
+            <LoaderPage isLoading={true} />
             <Text>It is still working</Text>
             {/* <ScrollView
                 contentContainerStyle={{
