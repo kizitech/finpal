@@ -1,5 +1,4 @@
 import "../global.css"
-import { StatusBar } from "expo-status-bar";
 import { Redirect, router } from "expo-router";
 import { View, Text, Image, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -11,8 +10,7 @@ const Welcome = () => {
     return (
         <SafeAreaView className="bg-white h-full">
             <LoaderPage isLoading={false} />
-            <Text>It is still working</Text>
-            {/* <ScrollView
+            <ScrollView
                 contentContainerStyle={{
                     height: "100%",
                 }}
@@ -24,40 +22,19 @@ const Welcome = () => {
                         resizeMode="contain"
                     />
 
-                    <Image
-                        source={images.cards}
-                        className="max-w-[380px] w-full h-[298px]"
-                        resizeMode="contain"
-                    />
+                    <Text className="text-5xl font-dsblack text-gray-800 mt-5 tracking-[-0.1px] text-center">finpal</Text>
 
-                    <View className="relative mt-5">
-                        <Text className="text-3xl text-white font-bold text-center">
-                            Discover Endless{"\n"}
-                            Possibilities with{" "}
-                            <Text className="text-secondary-200">Aora</Text>
-                        </Text>
-
-                        <Image
-                            source={images.path}
-                            className="w-[136px] h-[15px] absolute -bottom-2 -right-8"
-                            resizeMode="contain"
-                        />
-                    </View>
-
-                    <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
-                        Where Creativity Meets Innovation: Embark on a Journey of Limitless
-                        Exploration with Aora
+                    <Text className="text-2xl font-dsregular text-gray-600 mt-7 text-center">
+                        Your Smart Personal Finance AI Companion UI Kit
                     </Text>
 
                     <CustomButton
-                        title="Continue with Email"
+                        title="Get Started"
                         handlePress={() => router.push("/sign-in")}
                         containerStyles="w-full mt-7"
                     />
                 </View>
-            </ScrollView> */}
-
-            <StatusBar backgroundColor="#ffffff" style="light" />
+            </ScrollView>
         </SafeAreaView>
     )
 }
