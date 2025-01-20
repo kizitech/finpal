@@ -11,21 +11,25 @@ const Loader = ({ isLoading }) => {
     return (
         <>
             <View
-                className="absolute flex gap-6 justify-center items-center w-full h-full bg-white z-10"
+                className="absolute flex gap-10 justify-center items-center w-full h-full bg-white z-10"
                 style={{
                     height: screenHeight,
                 }}
             >
-                <Image source={images.logo} />
-                <Text className="text-base text-primary font-dsblack">LOADING . . .</Text>
-                <Text className="text-black font-dsregular text-3xl text-center px-12">We’re getting ready managing your budget.</Text>
-                <ActivityIndicator
-                    animating={isLoading}
-                    color="#fff"
-                    size={osName === "ios" ? "large" : 50}
-                />
+                <View className="grid gap-10 justify-center items-center w-full">
+                    <Image source={images.logo} />
+                    <Text className="text-base text-primary font-dsblack">LOADING . . .</Text>
+                    <Text className="text-black font-dsregular text-3xl text-center px-12">We’re getting ready managing your budget.</Text>
+                </View>
+                <View className="relative top-40">
+                    <ActivityIndicator
+                        animating={isLoading}
+                        color="#000"
+                        size={osName === "ios" ? "large" : 50}
+                    />
+                </View>
             </View>
-            {/* <StatusBar style="black" /> */}
+            <StatusBar style="black" />
         </>
     );
 };
