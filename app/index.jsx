@@ -5,6 +5,8 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import { images, icons } from "../constants";
 import { CustomButton, LoaderPage } from "../components";
+import Ionicons from '@expo/vector-icons/Ionicons';
+
 
 const checkList = [
     "Finance Companion",
@@ -40,11 +42,8 @@ const Welcome = () => {
                         <View>
                             {checkList.map((item, index) => (
                                 <View key={index} className="flex flex-row items-center mt-4">
-                                    <Image
-                                        className="w-5 h-5"
-                                        resizeMode="contain"
-                                        source={icons.checkbox}
-                                    />
+                                    <Ionicons name="checkmark-circle" size={24} color="#65A30D" />
+
                                     <Text className="ml-3 text-base font-dsregular text-gray-600">{item}</Text>
                                 </View>
                             ))}

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
-import { SlideItem, Pagination } from "./index"
+import { SlideItem, Pagination } from "../components"
 import Slides from "../constants/carouselData"
-import { Animated, FlatList, StyleSheet, Text, View } from 'react-native'
+import { Animated, FlatList, View } from 'react-native'
 
 const Slider = () => {
     const [index, setIndex] = useState(0)

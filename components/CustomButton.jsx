@@ -1,5 +1,5 @@
 import { ActivityIndicator, Image, Text, TouchableOpacity, View } from "react-native";
-import { icons } from "../constants";
+import AntDesign from '@expo/vector-icons/AntDesign';
 
 const CustomButton = ({
   title,
@@ -32,7 +32,7 @@ const CustomButton = ({
     <TouchableOpacity
       onPress={handlePress}
       activeOpacity={0.7}
-      className={`${buttonStyles} rounded-full min-h-[62px] flex flex-row justify-center items-center ${containerStyles} ${isLoading ? "opacity-50" : ""
+      className={`${buttonStyles} rounded-full min-h-[62px] flex flex-row justify-center items-center w-full ${containerStyles} ${isLoading ? "opacity-50" : ""
         }`}
       disabled={isLoading}
     >
@@ -50,12 +50,8 @@ const CustomButton = ({
         />
       )}
       {icon && (
-        <View className="mr-2">
-          <Image
-            className="ml-2 h-5 w-5"
-            resizeMode="contain"
-            source={icons.arrowRight}
-          />
+        <View className="ml-2">
+          <AntDesign name="arrowright" size={24} color="white" />
         </View>
       )}
     </TouchableOpacity>

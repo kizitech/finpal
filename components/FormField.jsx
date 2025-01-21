@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { icons } from "../constants";
 import { View, Text, TextInput, TouchableOpacity, Image } from "react-native";
 
-import { icons } from "../constants";
+import Feather from '@expo/vector-icons/Feather';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 const FormField = ({
   title,
@@ -15,14 +17,17 @@ const FormField = ({
 
   return (
     <View className={`space-y-2 ${otherStyles}`}>
-      <Text className="text-base text-gray-100 font-pmedium">{title}</Text>
+      <Text className="text-lg pb-1 text-gray-800 font-dssemibold">{title}</Text>
 
-      <View className="w-full h-16 px-4 bg-black-100 rounded-2xl border-2 border-black-200 focus:border-secondary flex flex-row items-center">
+      <View className="w-full h-16 px-4 rounded-full border border-gray-200 focus:border-primary flex flex-row items-center">
+        {title === "Email" && <MaterialCommunityIcons name="email-outline" size={22} color="#57534E" />}
+        {title === "Password" && <Feather name="lock" size={22} color="#57534E" />}
+
         <TextInput
-          className="flex-1 text-white font-psemibold text-base"
+          className="flex-1 text-gray-800 font-dssemibold text-base px-2"
           value={value}
           placeholder={placeholder}
-          placeholderTextColor="#7B7B8B"
+          placeholderTextColor="#57534E"
           onChangeText={handleChangeText}
           secureTextEntry={title === "Password" && !showPassword}
           {...props}
@@ -32,7 +37,7 @@ const FormField = ({
           <TouchableOpacity onPress={() => setShowPassword(!showPassword)}>
             <Image
               source={!showPassword ? icons.eye : icons.eyeHide}
-              className="w-6 h-6"
+              className="w-7 h-7"
               resizeMode="contain"
             />
           </TouchableOpacity>
