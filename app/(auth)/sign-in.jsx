@@ -55,11 +55,12 @@ const SignIn = () => {
                     </Text>
 
                     <FormField
-                        title="Email"
+                        title="Email Address"
                         value={form.email}
                         handleChangeText={(e) => setForm({ ...form, email: e })}
                         otherStyles="mt-7"
                         keyboardType="email-address"
+                        placeholder="Enter your email address..."
                     />
 
                     <FormField
@@ -67,6 +68,7 @@ const SignIn = () => {
                         value={form.password}
                         handleChangeText={(e) => setForm({ ...form, password: e })}
                         otherStyles="mt-7"
+                        placeholder="Enter your password..."
                     />
 
                     <CustomButton
