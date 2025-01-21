@@ -55,11 +55,11 @@ const ForgotPassword = () => {
                             router.push("/password-reset")
                             // submit
                         }}
-                        containerStyles="mt-14"
+                        containerStyles="mt-8"
                     // isLoading={isSubmitting}
                     />
 
-                    <View className="max-w-[240px]">
+                    <View className="max-w-[240px] mt-5">
                         <Text className="text-base text-gray-600 font-dsregular mt-4">Don’t remember your email?
                             {""} Contact us at {""}
                             <Link
