@@ -78,7 +78,10 @@ const SignUp = () => {
                     <CustomButton
                         primary
                         title="Create Account"
-                        handlePress={submit}
+                        handlePress={() => {
+                            submit
+                            router.push("/step-1")
+                        }}
                         containerStyles="mt-14"
                     />
 

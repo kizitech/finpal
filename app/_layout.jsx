@@ -42,6 +42,7 @@ const RootLayout = () => {
                 <Stack.Screen name="index" options={{ headerShown: false }} />
                 <Stack.Screen name="carousel" options={{ headerShown: false }} />
                 <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+                <Stack.Screen name="(fin-assistant)" options={{ headerShown: false }} />
             </Stack>
             <StatusBar style="black" />
         </>

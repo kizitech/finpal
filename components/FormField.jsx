@@ -11,6 +11,7 @@ const FormField = ({
   placeholder,
   handleChangeText,
   otherStyles,
+  inputStyle,
   ...props
 }) => {
   const [showPassword, setShowPassword] = useState(false);
@@ -33,7 +34,7 @@ const FormField = ({
         {renderIcon()}
 
         <TextInput
-          className="flex-1 text-gray-800 font-dsregular text-base px-2"
+          className={`flex-1 text-gray-800 font-dsregular text-base px-2 ${inputStyle}`}
           value={value}
           placeholder={placeholder}
           placeholderTextColor="#57534E"

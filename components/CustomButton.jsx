@@ -10,7 +10,8 @@ const CustomButton = ({
   primary,
   secondary,
   link,
-  icon
+  icon,
+  inactive
 }) => {
   const buttonStyles = primary
     ? "bg-primary"
@@ -18,7 +19,10 @@ const CustomButton = ({
       ? "bg-white border border-primary"
       : link
         ? "bg-transparent"
+          : inactive
+            ? "bg-gray-100"
         : "";
+
 
   const textColor = primary
     ? "text-white"
@@ -26,6 +30,8 @@ const CustomButton = ({
       ? "text-primary"
       : link
         ? "text-primary underline"
+          : inactive
+            ? "text-gray-200"
         : "text-black";
 
   return (
