@@ -29,7 +29,7 @@ const ForgotPassword = () => {
                     <Image
                         source={images.auth}
                         resizeMode="contain"
-                        className="w-96 h-60"
+                        className="w-[343px] h-60"
                     />
 
                     <Text className="text-4xl text-gray-800 mt-2 font-dsblack text-center">

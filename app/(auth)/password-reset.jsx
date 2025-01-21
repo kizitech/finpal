@@ -16,9 +16,9 @@ const PasswordReset = () => {
                     }}
                 >
                     <Image
-                        source={images.auth}
+                        source={images.passwordReset}
                         resizeMode="contain"
-                        className="w-96 h-60"
+                        className="w-[343px] h-[316px]"
                     />
 
                     <Text className="text-4xl text-gray-800 mt-2 font-dsblack text-center">
