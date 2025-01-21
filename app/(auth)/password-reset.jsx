@@ -37,7 +37,7 @@ const PasswordReset = () => {
                         containerStyles="mt-8"
                     />
 
-                    <View className="max-w-[240px] mt-5">
+                    <View className="max-w-[190px] mt-5">
                         <Text className="text-base text-gray-600 font-dsregular mt-4">Don’t remember your email?
                             {""} Contact us at {""}
                             <Link
