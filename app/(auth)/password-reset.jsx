@@ -37,9 +37,10 @@ const PasswordReset = () => {
                         containerStyles="mt-8"
                     />
 
-                    <View className="max-w-[190px] mt-5">
-                        <Text className="text-base text-gray-600 font-dsregular mt-4">Don’t remember your email?
-                            {""} Contact us at {""}
+                    <View className="mt-5">
+                        <Text className="text-base text-center text-gray-600 font-dsregular mt-4">Don’t remember your email?</Text>
+                        <Text className="text-base text-center text-gray-600 font-dsregular mt-1">
+                            Contact us at {""}
                             <Link
                                 className="text-primary font-dsbold underline"
                                 href="mailto:help@finpal.ai"
