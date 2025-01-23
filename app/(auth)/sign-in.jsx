@@ -32,7 +32,7 @@ const SignIn = () => {
                         className="w-24 h-20"
                     />
 
-                    <Text className="text-4xl text-gray-800 mt-7 font-dsblack">
+                    <Text className="text-4xl text-gray-80 mt-7 font-dsblack">
                         Sign In to finpal
                     </Text>
 

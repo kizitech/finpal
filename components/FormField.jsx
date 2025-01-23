@@ -28,13 +28,13 @@ const FormField = ({
 
   return (
     <View className={`space-y-2 ${otherStyles}`}>
-      <Text className="text-lg pb-1 text-gray-800 font-dssemibold">{title}</Text>
+      <Text className="text-lg pb-1 text-gray-80 font-dssemibold">{title}</Text>
 
       <View className="w-full h-16 px-4 rounded-full border border-gray-200 focus:border-brand-60 flex flex-row items-center">
         {renderIcon()}
 
         <TextInput
-          className={`flex-1 text-gray-800 font-dsregular text-base px-2 ${inputStyle}`}
+          className={`flex-1 text-gray-80 font-dsregular text-base px-2 ${inputStyle}`}
           value={value}
           placeholder={placeholder}
           placeholderTextColor="#57534E"

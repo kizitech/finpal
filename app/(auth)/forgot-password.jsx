@@ -32,10 +32,10 @@ const ForgotPassword = () => {
                         className="w-[343px] h-60"
                     />
 
-                    <Text className="text-4xl text-gray-800 mt-2 font-dsblack text-center">
+                    <Text className="text-4xl text-gray-80 mt-2 font-dsblack text-center">
                         Forgot Password
                     </Text>
-                    <Text className="text-xl text-gray-600 mt-2 font-dsregular text-center">
+                    <Text className="text-xl text-gray-60 mt-2 font-dsregular text-center">
                         Please enter your email address to reset your password.
                     </Text>
 
@@ -60,8 +60,8 @@ const ForgotPassword = () => {
                     />
 
                     <View className="mt-5">
-                        <Text className="text-base text-center text-gray-600 font-dsregular mt-4">Don’t remember your email?</Text>
-                        <Text className="text-base text-center text-gray-600 font-dsregular mt-1">
+                        <Text className="text-base text-center text-gray-60 font-dsregular mt-4">Don’t remember your email?</Text>
+                        <Text className="text-base text-center text-gray-60 font-dsregular mt-1">
                             Contact us at {""}
                             <Link
                                 className="text-brand-60 font-dsbold underline"

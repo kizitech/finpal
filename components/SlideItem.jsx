@@ -39,8 +39,8 @@ const SlideItem = ({ item }) => {
             />
 
             <View style={styles.content}>
-                <Text className="text-3xl font-dsblack text-gray-800 text-center">{item.title}</Text>
-                <Text className="text-lg font-dsregular text-gray-600 text-center mt-5">{item.description}</Text>
+                <Text className="text-3xl font-dsblack text-gray-80 text-center">{item.title}</Text>
+                <Text className="text-lg font-dsregular text-gray-60 text-center mt-5">{item.description}</Text>
             </View>
         </View>
     );

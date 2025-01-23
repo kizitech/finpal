@@ -21,10 +21,10 @@ const PasswordReset = () => {
                         className="w-[343px] h-[316px]"
                     />
 
-                    <Text className="text-4xl text-gray-800 mt-2 font-dsblack text-center">
+                    <Text className="text-4xl text-gray-80 mt-2 font-dsblack text-center">
                         Password Reset Sent.
                     </Text>
-                    <Text className="text-xl text-gray-600 mt-2 font-dsregular text-center">
+                    <Text className="text-xl text-gray-60 mt-2 font-dsregular text-center">
                         Please check your email in a few minutes - we’ve sent you an email containing password recovery link.
                     </Text>
 
@@ -38,8 +38,8 @@ const PasswordReset = () => {
                     />
 
                     <View className="mt-5">
-                        <Text className="text-base text-center text-gray-600 font-dsregular mt-4">Don’t remember your email?</Text>
-                        <Text className="text-base text-center text-gray-600 font-dsregular mt-1">
+                        <Text className="text-base text-center text-gray-60 font-dsregular mt-4">Don’t remember your email?</Text>
+                        <Text className="text-base text-center text-gray-60 font-dsregular mt-1">
                             Contact us at {""}
                             <Link
                                 className="text-brand-60 font-dsbold underline"

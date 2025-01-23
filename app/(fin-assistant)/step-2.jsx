@@ -69,17 +69,17 @@ const ForgotPassword = () => {
                         minHeight: Dimensions.get("window").height - 100,
                     }}
                 >
-                    <Text className="text-4xl w-[240px] leading-[50px] text-gray-800 mt-2 font-dsbold text-center">
+                    <Text className="text-4xl text-gray-80 mt-2 mb-6 font-dsbold text-center">
                         What’s your app purpose?
                     </Text>
 
-                    <View className="w-full flex active:border-1 active:border-brand-60 mt-4 px-5">
+                    <View className="w-full flex active:border-1 flex-col gap-4 active:border-brand-60 mt-4 px-5">
                         {buttonData.map((button) => (
                             <View
                                 key={button.id} onPress={button.onPress}
-                                className="flex gap-4 items-center rounded-[11px] justify-start px-4 text-2xl py-4 bg-white my-2 flex-row w-full">
+                                className="flex gap-4 items-center rounded-2xl justify-start p-4 text-2xl bg-white flex-row w-full">
                                 <Text>{button.icons}</Text>
-                                <Text>{button.title}</Text>
+                                <Text className="font-dssemibold">{button.title}</Text>
                             </View>
                         ))}
                     </View>
@@ -92,7 +92,7 @@ const ForgotPassword = () => {
                             router.push("/step-3")
                             // submit
                         }}
-                        containerStyles="mt-14"
+                        containerStyles="mt-8"
                     // isLoading={isSubmitting}
                     />
                 </View>

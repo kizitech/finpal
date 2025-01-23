@@ -26,7 +26,7 @@ const ForgotPassword = () => {
                         minHeight: Dimensions.get("window").height - 100,
                     }}
                 >
-                    <Text className="text-4xl text-gray-800 mt-2 font-dsbold text-center">
+                    <Text className="text-4xl text-gray-80 mt-2 font-dsbold text-center">
                         Please enter your full name
                     </Text>
 

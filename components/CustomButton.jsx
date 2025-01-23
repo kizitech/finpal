@@ -55,7 +55,7 @@ const CustomButton = ({
           className="ml-2"
         />
       )}
-      {icon && (
+      {icon && !isLoading && (
         <View className="ml-2">
           <AntDesign name="arrowright" size={24} color="white" />
         </View>

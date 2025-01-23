@@ -96,7 +96,7 @@ const SignUp = () => {
                         className="w-24 h-20"
                     />
 
-                    <Text className="text-4xl text-gray-800 mt-7 font-dsblack mb-10">
+                    <Text className="text-4xl text-gray-80 mt-7 font-dsblack mb-10">
                         Sign Up to finpal
                     </Text>
 
