@@ -14,22 +14,7 @@ const SignUp = () => {
     });
 
     const submit = async () => {
-        // if (form.username === "" || form.email === "" || form.password === "") {
-        //     Alert.alert("Error", "Please fill in all fields");
-        // }
 
-        // setIsSubmitting(true);
-        // try {
-        //     const result = await createUser(form.email, form.password, form.username);
-        //     setUser(result);
-        //     setIsLoggedIn(true);
-
-        //     router.replace("/sign-in");
-        // } catch (error) {
-        //     Alert.alert("Error", error.message);
-        // } finally {
-        //     setIsSubmitting(false);
-        // }
     };
 
     return (
