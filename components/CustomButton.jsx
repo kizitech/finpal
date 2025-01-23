@@ -14,25 +14,25 @@ const CustomButton = ({
   inactive
 }) => {
   const buttonStyles = primary
-    ? "bg-primary"
+    ? "bg-brand-60"
     : secondary
-      ? "bg-white border border-primary"
+      ? "bg-white border border-brand-60"
       : link
         ? "bg-transparent"
-          : inactive
-            ? "bg-gray-100"
-        : "";
+        : inactive
+          ? "bg-gray-100"
+          : "";
 
 
   const textColor = primary
     ? "text-white"
     : secondary
-      ? "text-primary"
+      ? "text-brand-60"
       : link
-        ? "text-primary underline"
-          : inactive
-            ? "text-gray-200"
-        : "text-black";
+        ? "text-brand-60 underline"
+        : inactive
+          ? "text-gray-200"
+          : "text-black";
 
   return (
     <TouchableOpacity

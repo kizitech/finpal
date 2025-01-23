@@ -82,7 +82,7 @@ const SignUp = () => {
     }, [user]);
 
     return (
-        <SafeAreaView className="bg-white h-full">
+        <SafeAreaView className="bg-gray-5 h-full">
             <ScrollView>
                 <View
                     className="w-full flex justify-center items-center h-full px-4 my-6"

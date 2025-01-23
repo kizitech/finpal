@@ -35,7 +35,7 @@ const Slider = () => {
     }).current;
 
     return (
-        <View className="bg-white">
+        <View className="bg-brand-5">
             <FlatList
                 data={Slides}
                 horizontal

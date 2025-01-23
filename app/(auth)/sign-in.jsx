@@ -14,29 +14,11 @@ const SignIn = () => {
     });
 
     const submit = async () => {
-        //     if (form.email === "" || form.password === "") {
-        //         Alert.alert("Error", "Please fill in all fields");
-        //     }
 
-        //     setIsSubmitting(true);
-
-        //     try {
-        //         await signIn(form.email, form.password);
-        //         const result = await getCurrentUser();
-        //         setUser(result);
-        //         setIsLoggedIn(true);
-
-        //         Alert.alert("Success", "User signed in successfully");
-        //         router.replace("/home");
-        //     } catch (error) {
-        //         Alert.alert("Error", error.message);
-        //     } finally {
-        //         setIsSubmitting(false);
-        //     }
     };
 
     return (
-        <SafeAreaView className="bg-white h-full">
+        <SafeAreaView className="bg-gray-5 h-full">
             <ScrollView>
                 <View
                     className="w-full flex justify-center items-center h-full px-4 my-6"

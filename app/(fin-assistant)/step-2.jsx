@@ -61,7 +61,7 @@ const ForgotPassword = () => {
     ]
 
     return (
-        <SafeAreaView className="bg-[#FAFAF9] pt-4 h-full">
+        <SafeAreaView className="pt-4 h-full">
             <ScrollView>
                 <View
                     className="w-full flex justify-center items-center h-full px-4 mb-6"
@@ -70,12 +70,14 @@ const ForgotPassword = () => {
                     }}
                 >
                     <Text className="text-4xl w-[240px] leading-[50px] text-gray-800 mt-2 font-dsbold text-center">
-                    What’s your app purpose?
+                        What’s your app purpose?
                     </Text>
 
-                    <View className="w-full flex active:border-1 active:border-primary mt-4 px-5">
+                    <View className="w-full flex active:border-1 active:border-brand-60 mt-4 px-5">
                         {buttonData.map((button) => (
-                            <View className="flex gap-4 items-center rounded-[11px] justify-start px-4 text-2xl py-4 bg-white my-2 shadow-2xl shadow-gray-700 flex-row w-full" key={button.id} onPress={button.onPress}>
+                            <View
+                                key={button.id} onPress={button.onPress}
+                                className="flex gap-4 items-center rounded-[11px] justify-start px-4 text-2xl py-4 bg-white my-2 flex-row w-full">
                                 <Text>{button.icons}</Text>
                                 <Text>{button.title}</Text>
                             </View>

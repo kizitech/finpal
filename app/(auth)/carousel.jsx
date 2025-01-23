@@ -7,7 +7,7 @@ const Carousel = () => {
     return (
         <ScrollView>
             <Slider />
-            <View className="px-4 bg-white pb-20">
+            <View className="px-4 bg-gray-0 pb-20">
                 <CustomButton
                     primary
                     icon={true}

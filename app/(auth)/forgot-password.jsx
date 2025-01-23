@@ -18,7 +18,7 @@ const ForgotPassword = () => {
     };
 
     return (
-        <SafeAreaView className="bg-white h-full">
+        <SafeAreaView className="bg-gray-5 h-full">
             <ScrollView>
                 <View
                     className="w-full flex justify-center items-center h-full px-4 mb-6"
@@ -64,7 +64,7 @@ const ForgotPassword = () => {
                         <Text className="text-base text-center text-gray-600 font-dsregular mt-1">
                             Contact us at {""}
                             <Link
-                                className="text-primary font-dsbold underline"
+                                className="text-brand-60 font-dsbold underline"
                                 href="mailto:help@finpal.ai"
                             >help@finpal.ai</Link>
                         </Text>

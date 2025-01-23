@@ -35,7 +35,7 @@ const ForgotPassword = () => {
                         value={form.email}
                         handleChangeText={(e) => setForm({ ...form, email: e })}
                         otherStyles="mt-10"
-                        inputStyle="placeholder:text-center placeholder:text-3xl"
+                        inputStyle="placeholder:text-center placeholder:text-2xl"
                         placeholder="Jonathan F. Doe"
                     />
 
