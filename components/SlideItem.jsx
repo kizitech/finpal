@@ -16,7 +16,7 @@ const SlideItem = ({ item }) => {
 
     Animated.timing(translateYImage, {
         toValue: 0,
-        duration: 1000,
+        duration: 1200,
         useNativeDriver: true,
         easing: Easing.bounce,
     }).start();
