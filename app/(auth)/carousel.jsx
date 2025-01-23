@@ -1,7 +1,7 @@
 import React from 'react'
 import { ScrollView, View } from 'react-native'
 import { router } from 'expo-router'
-import { CustomButton, Slider } from '../components'
+import { CustomButton, Slider } from '../../components'
 
 const Carousel = () => {
     return (
