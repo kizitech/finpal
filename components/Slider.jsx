@@ -1,31 +1,33 @@
-import React, { useRef, useState } from 'react'
-import { SlideItem, Pagination } from "../components"
-import Slides from "../constants/carouselData"
-import { Animated, FlatList, View } from 'react-native'
+import React, { useRef, useState } from 'react';
+import { SlideItem, Pagination } from "../components";
+import Slides from "../constants/carouselData";
+import { Animated, FlatList, View, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
 
 const Slider = () => {
-    const [index, setIndex] = useState(0)
+    const [index, setIndex] = useState(0);
     const scrollX = useRef(new Animated.Value(0)).current;
 
-    const handleOnScroll = event => {
-        Animated.event(
-            [
-                {
-                    nativeEvent: {
-                        contentOffset: {
-                            x: scrollX
-                        }
-                    }
-                }
-            ],
+    const handleOnScroll = Animated.event(
+        [
             {
-                useNativeDriver: false,
+                nativeEvent: {
+                    contentOffset: {
+                        x: scrollX,
+                    },
+                },
             },
-        )(event);
-    }
+        ],
+        {
+            useNativeDriver: false,
+        }
+    );
 
     const handleOnViewableItemsChanged = useRef(({ viewableItems }) => {
-        setIndex(viewableItems[0].index);
+        if (viewableItems.length > 0) {
+            setIndex(viewableItems[0].index);
+        }
     }).current;
 
     const viewabilityConfig = useRef({
@@ -38,7 +40,9 @@ const Slider = () => {
                 data={Slides}
                 horizontal
                 pagingEnabled
-                snapToAlignment='center'
+                snapToAlignment="center"
+                snapToInterval={width}
+                decelerationRate="fast"
                 showsHorizontalScrollIndicator={false}
                 renderItem={({ item }) => <SlideItem item={item} />}
                 onScroll={handleOnScroll}
@@ -47,7 +51,7 @@ const Slider = () => {
             />
             <Pagination data={Slides} scrollX={scrollX} />
         </View>
-    )
-}
+    );
+};
 
-export default Slider
+export default Slider;
