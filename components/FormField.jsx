@@ -18,10 +18,10 @@ const FormField = ({
 
   const renderIcon = () => {
     if (title.toLowerCase().includes("email")) {
-      return <MaterialCommunityIcons name="email-outline" size={22} color="#57534E" />;
+      return <MaterialCommunityIcons name="email-outline" size={18} color="#57534E" />;
     }
     if (title.toLowerCase().includes("password")) {
-      return <Feather name="lock" size={22} color="#57534E" />;
+      return <Feather name="lock" size={18} color="#57534E" />;
     }
     return null;
   };
