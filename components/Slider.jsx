@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { SlideItem, Pagination } from "../components";
+import Pagination from "./Pagination"
+import SlideItem from "./SlideItem"
 import Slides from "../constants/carouselData";
 import { Animated, FlatList, View, Dimensions } from 'react-native';
 
