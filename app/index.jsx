@@ -5,7 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import { images, icons } from "../constants";
 import { CustomButton, LoaderPage } from "../components";
-import Ionicons from '@expo/vector-icons/Ionicons';
+import Entypo from '@expo/vector-icons/Entypo';
 
 
 const checkList = [
@@ -18,7 +18,7 @@ const checkList = [
 
 const Welcome = () => {
     return (
-        <SafeAreaView className="bg-gray-0 h-full">
+        <SafeAreaView className="bg-gray-0 dark:bg-gray-90 h-full">
             <LoaderPage isLoading={false} />
             <ScrollView
                 contentContainerStyle={{
@@ -32,9 +32,9 @@ const Welcome = () => {
                         resizeMode="contain"
                     />
 
-                    <Text className="text-5xl font-dsblack text-gray-80 mt-5 tracking-[-0.1px] text-center">finpal</Text>
+                    <Text className="text-5xl font-dsblack text-gray-80 dark:text-gray-0 mt-3 pt-2 tracking-[-0.1px] text-center">finpal</Text>
 
-                    <Text className="text-2xl font-dsregular text-gray-60 mt-7 text-center">
+                    <Text className="text-2xl font-dsregular text-gray-60 dark:text-gray-30 mt-7 text-center">
                         Your Smart Personal Finance AI Companion UI Kit
                     </Text>
 
@@ -42,9 +42,8 @@ const Welcome = () => {
                         <View>
                             {checkList.map((item, index) => (
                                 <View key={index} className="flex flex-row items-center mt-4">
-                                    <Ionicons name="checkmark-circle" size={24} color="#65A30D" />
-
-                                    <Text className="ml-3 text-base font-dsregular text-gray-80">{item}</Text>
+                                    <Entypo name="check" size={18} color="#FFFFFF" className="bg-brand-60 rounded-full p-1" />
+                                    <Text className="ml-3 text-base font-dsregular text-gray-80 dark:text-gray-0">{item}</Text>
                                 </View>
                             ))}
                         </View>

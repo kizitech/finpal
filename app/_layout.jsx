@@ -43,7 +43,7 @@ const RootLayout = () => {
                 <Stack.Screen name="(auth)" options={{ headerShown: false }} />
                 <Stack.Screen name="(fin-assistant)" options={{ headerShown: false }} />
             </Stack>
-            <StatusBar style="black" />
+            <StatusBar style="auto" />
         </>
     );
 };
