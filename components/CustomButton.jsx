@@ -16,7 +16,7 @@ const CustomButton = ({
   const buttonStyles = primary
     ? "bg-brand-60"
     : secondary
-      ? "bg-white border border-brand-60"
+      ? "bg-none border border-brand-60"
       : link
         ? "bg-transparent"
         : inactive

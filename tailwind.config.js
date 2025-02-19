@@ -9,6 +9,7 @@ module.exports = {
                 brand: {
                     5: "#F7FEE7",
                     60: "#65A30D",
+                    90: "#365314",
                 },
                 black: {
                     DEFAULT: "#000",
