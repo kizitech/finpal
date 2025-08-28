@@ -27,6 +27,15 @@
     "plugins": [
       "expo-router",
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "bf4583f6-586f-42ff-b068-5487e53c216c"
+      }
+    },
+    "owner": "kizitech"
   }
 }
